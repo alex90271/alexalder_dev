@@ -1,13 +1,16 @@
 <script>
   import Projects from "./lib/Projects.svelte";
   import Services from "./lib/Services.svelte";
+  import HeaderBar from "./lib/Header_bar.svelte";
+  import Footer from "./lib/Footer.svelte";
 </script>
 
 <main class="main">
+  <HeaderBar />
   <div class="grid2">
     <div>
       <div class="card">
-        <h1 class="barcodeText">Im Alex<br />Full stack developer</h1>
+        <h1>Im Alex<br />Full stack developer</h1>
         <p>Let me bring your next idea alive with innovative software</p>
       </div>
     </div>
@@ -20,8 +23,12 @@
       </ul>
     </div>
   </div>
+  <span class="spacer" />
   <Projects />
+  <span class="spacer" />
   <Services />
+  <span class="spacer" />
+  <Footer />
 </main>
 
 <style>

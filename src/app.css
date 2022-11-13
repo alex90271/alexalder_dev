@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @font-face {
   font-family: 'Lovelo';
   src: url('/fonts/Lovelo/Lovelo-Black.ttf') format('truetype');
@@ -11,7 +11,7 @@
 
 :root {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.5em;
+  font-size: medium;
   font-weight: 400;
 
   background-color: #242424;
@@ -61,13 +61,20 @@ h1 {
 
 .unbulleted-list{
   list-style-type: none;
-  line-height: 200%;
+  margin: auto
+}
+li {
+  margin: 10px;
 }
 
 .section-header {
   text-align: center;
   color: #FFF;
-  margin-top: 20%;
+}
+
+.spacer {
+  margin: 600px;
+  display: block;
 }
 
 a {
@@ -109,6 +116,7 @@ body {
   );
   padding: 3em;
   margin: 2em;
+  margin-bottom: 5em;
   height: 15em;
   min-width: 5em;
   border-radius: 2.5em;
@@ -146,10 +154,10 @@ body {
   }
 }
 
-.barcodeText {
-  font-family: "Libre Barcode 39 Text", cursive;
-  font-size: 2em;
-}
+
+
+/*card gradient animations*/ 
+
 
 @keyframes gradient1 {
   from {
@@ -184,6 +192,10 @@ body {
   }
 }
 
+
+/*mobile and tablet css*/ 
+
+
 @media (max-width: 1000px) {
   .grid2 {
     width: 100%;
@@ -197,6 +209,9 @@ body {
   .card {
     max-width: 50%;
     grid-column: auto;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1em;
   }
   .hidden {
     opacity: 1;
@@ -209,3 +224,5 @@ body {
     line-height: 125%;
   }
 }
+
+

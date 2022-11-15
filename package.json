@@ -14,6 +14,7 @@
     "vite": "^3.2.3"
   },
   "dependencies": {
+    "feather-icons": "^4.29.0",
     "svelte-intersection-observer": "^0.10.0"
   }
 }

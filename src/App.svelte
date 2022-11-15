@@ -1,33 +1,13 @@
 <script>
-  import Projects from "./lib/Projects.svelte";
-  import Services from "./lib/Services.svelte";
-  import HeaderBar from "./lib/Header_bar.svelte";
   import Footer from "./lib/Footer.svelte";
+  import AnimatedCard from "./lib/AnimatedCard.svelte";
+  import HeaderCard from "./lib/HeaderCard.svelte";
 </script>
 
 <main class="main">
-  <HeaderBar />
-  <div class="grid2">
-    <div>
-      <div class="card">
-        <h1>Im Alex<br />Full stack developer</h1>
-        <p>Let me bring your next idea alive with innovative software</p>
-      </div>
-    </div>
-    <div class="card">
-      <ul class="unbulleted-list">
-        <li>Custom software</li>
-        <li>Design, Build, and Deploy your website</li>
-        <li>Implement automated data managment</li>
-        <li>Provide meaningful insight</li>
-      </ul>
-    </div>
-  </div>
-  <span class="spacer" />
-  <Projects />
-  <span class="spacer" />
-  <Services />
-  <span class="spacer" />
+  <HeaderCard/>
+  <AnimatedCard section_header='Services' card_header='Wordpress' card_desc='Install, Design, Host, and Manage your Wordpress Site' call_to_action='Contact Now'/>
+  <AnimatedCard section_header='' card_header='Websites' card_desc='Install, Design, Host, and Manage your Site' call_to_action='Contact Now'/>
   <Footer />
 </main>
 

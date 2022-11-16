@@ -27,7 +27,7 @@
     <h1 bind:this={hiddenCard} class={cardIntersected ? "section-header hidden" : "section-header shown"}>
       {section_header}
     </h1>
-    <div class="grid">
+    <div>
       <div bind:this={hiddenCard} class={cardIntersected ? "card hidden" : "card shown"}>
         <h1>
           {card_header}
@@ -46,24 +46,14 @@
 <style>
 
 .card {
-  background: rgb(34, 193, 195);
-  background: linear-gradient(
-    200deg,
-    rgba(34, 193, 195, 1) 0%,
-    rgba(253, 187, 45, 1) 100%
-  );
-  padding: 3em;
-  margin: 2em;
-  margin-bottom: 5em;
-  height: 15em;
-  min-width: 7.5em;
-  border-radius: 2.5em;
-  animation: gradient3 60s infinite normal ease-in;
+  margin-bottom: 15%;
+  animation: gradient1 60s infinite normal ease-in;
 }
   
 .section-header {
   text-align: center;
   color: #FFF;
+  position: inherit;
 }
 
 .shown {
@@ -79,11 +69,11 @@
  transform: translateX(-100%)
 }
 .card:nth-child(1) {
-  animation: gradient1 60s infinite normal ease-in;
+  animation: gradient2 60s infinite normal ease-in;
 }
 
 .card:nth-child(2) {
-  animation: gradient4 60s infinite normal ease-in;
+  animation: gradient3 60s infinite normal ease-in;
 }
 
 .shown:nth-child(1) {
@@ -108,7 +98,7 @@
   }
 }
 
-@keyframes gradient3 {
+@keyframes gradient2 {
   from {
     -webkit-filter: hue-rotate(90deg);
   }
@@ -116,7 +106,7 @@
     -webkit-filter: hue-rotate(-270deg);
   }
 }
-@keyframes gradient4 {
+@keyframes gradient3 {
   from {
     -webkit-filter: hue-rotate(300deg);
   }

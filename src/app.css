@@ -10,6 +10,10 @@
   suffix: " ";
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* root styles */
 
 body {
@@ -61,3 +65,4 @@ h1 {
   flex-wrap: wrap;
   grid-template-columns: auto;
 }
+

@@ -12,7 +12,7 @@
 <style>
 
 .wave {
-  animation: wave-animation 60s infinite normal ease-in;
+  color: lightblue;
   position: fixed;
   width: 100%
 }
@@ -31,12 +31,4 @@
   
 }
 
-@keyframes wave-animation {
-  from {
-    -webkit-filter: hue-rotate(90deg);
-  }
-  to {
-    -webkit-filter: hue-rotate(270deg);
-  }
-}
 </style>

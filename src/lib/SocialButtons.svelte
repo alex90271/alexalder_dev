@@ -25,7 +25,7 @@
   }
 
   .social-button {
-    background-color: rgb(205, 194, 255);
+    background-color: lightblue;
     text-align: center;
     color: rgb(49, 49, 49);
     margin: 5%;
@@ -36,7 +36,7 @@
   }
 
   .social-button:hover {
-    background-color: blueviolet;
+    background-color: grey;
   }
 
   @media only screen and (min-width: 600px) {

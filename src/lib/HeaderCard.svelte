@@ -1,15 +1,16 @@
+<script>
+    import SocialButtons from "./SocialButtons.svelte";
+
+</script>
 <main>
   <div class="header-card">
     <h1>Im Alex<br />Full stack developer</h1>
     <p>Let me bring your next idea alive with innovative software</p>
   </div>
     <div class="header-bar"> 
-      <p> 
-        Tools
-        <br>
-        Stuff
-        <br>
-      </p>  
+      <SocialButtons>
+        
+      </SocialButtons>
     </div>
 </main>
 

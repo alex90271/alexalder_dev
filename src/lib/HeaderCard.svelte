@@ -37,9 +37,23 @@
 </main>
 
 <style>
-  .header-card {
+
+.header-card {
     position: relative;
     z-index: 1;
+    background: rgb(34, 193, 195);
+  background: linear-gradient(
+    200deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  text-align: center;
+  padding: 5%;
+  margin: 5%;
+  height: 15em;
+  min-width: 7.5em;
+  border-radius: 2.5em;
+  animation: header-animation 60s infinite normal ease-in;
   }
 
   .header {

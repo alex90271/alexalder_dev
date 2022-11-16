@@ -78,6 +78,13 @@
   }
 
   @media only screen and (min-width: 600px) {
+    .header-card {
+
+      margin-top: 7.5%;
+  margin-bottom: 5%;
+  margin-left: 2.5%;
+  margin-bottom: 2.5%;
+    }
     .header {
       top: 0;
       padding: 1%;

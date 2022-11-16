@@ -10,10 +10,12 @@
 
 <style>
     .footer-bar {
+        display: grid;
         background-color: lightblue;
         color: rgb(49, 49, 49);
         border-radius: 2.5em;
-        margin: 5%;
+        padding: 1em;
+        margin: 2.5%;
         font-size: x-large;
         position: relative;
         z-index: 1;
@@ -21,14 +23,7 @@
 
     @media only screen and (min-width: 600px) {
     .footer-bar {
-        background-color: lightblue;
-        color: rgb(49, 49, 49);
-        border-radius: 2.5em;
-        margin: 5%;
-        font-size: x-large;
-        position: relative;
-        z-index: 1;
+        float: left;
     }
-
     }
 </style>

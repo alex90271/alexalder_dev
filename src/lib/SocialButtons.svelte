@@ -28,9 +28,8 @@
     background-color: lightblue;
     text-align: center;
     color: rgb(49, 49, 49);
-    margin: 5%;
-    padding: 10px;
-    border-radius: 35px;
+    padding: 5%;
+    border-radius: 2.5em;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     transition-duration: 1s;
   }

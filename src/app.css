@@ -58,11 +58,17 @@ h1 {
   background: #000;
 }
 
-.grid {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  grid-template-columns: auto;
-}
+.card {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    200deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  padding: 3em;
+  margin: 5%;
+  height: 15em;
+  min-width: 7.5em;
+  border-radius: 2.5em;
 
+}

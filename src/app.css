@@ -10,10 +10,6 @@
   suffix: " ";
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /* root styles */
 
 body {
@@ -33,7 +29,13 @@ h1 {
   font-size: medium;
   font-weight: 400;
 
-  background-color: #242424;
+  --jet: #312f2fff;
+  --middle-blue-green: #84dccfff;
+  --uranian-blue: #a6d9f7ff;
+  --light-steel-blue: #bccce0ff;
+  --tuscany: #bf98a0ff;
+
+  background-color: var(--jet);
   background-image: radial-gradient(hsla(210, 60%, 60%, 0.25) 5%, transparent 0);
   background-size: 30px 30px;
 

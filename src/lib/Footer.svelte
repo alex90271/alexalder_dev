@@ -10,8 +10,8 @@
 
 <style>
     .footer-bar {
-        background-color: lightyellow;
-        color: rgb(49, 49, 49);
+        background-color: var(--tuscany);
+        color: var(--jet);
         border-radius: 2.5em;
         margin: 5%;
         font-size: x-large;
@@ -36,7 +36,6 @@
     }
     @media only screen and (min-width: 600px) {
     .footer-bar {
-        float: left;
         margin: 2.5%;
         margin-bottom: 10%;
     

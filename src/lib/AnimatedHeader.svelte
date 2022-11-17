@@ -30,6 +30,7 @@
   <style>
     
   .section-header {
+    margin: 7.5%;
     text-align: center;
     color: #FFF;
     position: inherit;

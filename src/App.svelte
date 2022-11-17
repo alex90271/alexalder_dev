@@ -7,6 +7,7 @@
 </script>
 
 <main class="main">
+  <h1 class="header-text">Alder Automations</h1>
   <HeaderCard />
   <AnimatedHeader
     section_header="Services" />
@@ -57,11 +58,17 @@
       call_to_action=""
     />
   </div>
-  <WavesClip />
+  <AnimatedHeader
+    section_header="Contact" />
   <Footer />
 </main>
 
 <style>
+
+  .header-text{
+    color: white;
+    text-align: center;
+  }
 
 @media only screen and (min-width: 600px) {
   .card-section{

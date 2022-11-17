@@ -19,13 +19,6 @@
       }
     }}
   >
-    <div
-      class={cardIntersected
-        ? "header hidden"
-        : "header shown"}
-    >
-      <h1>Alder Automations</h1>
-    </div>
     <div bind:this={headerCard}>
       <div class="card header-card">
         <h1>Im Alex<br />Full stack developer</h1>
@@ -42,11 +35,7 @@
     position: relative;
     z-index: 1;
     background: rgb(34, 193, 195);
-  background: linear-gradient(
-    200deg,
-    rgba(34, 193, 195, 1) 0%,
-    rgba(253, 187, 45, 1) 100%
-  );
+  background: linear-gradient(225deg, #84dccfff, #a6d9f7ff, #bccce0ff, #bf98a0ff);
   text-align: center;
   padding: 5%;
   margin: 5%;
@@ -59,32 +48,7 @@
     animation-duration: 1s;
   }
 
-  .header {
-    transition: 3s;
-    color:white;
-    top: 0;
-      padding: 1%;
-      transition: 3s;
-  }
-
-  .shown {
-      opacity: 0;
-      filter: blur(5px);
-      padding: 3%;
-    }
-
-    .hidden {
-      opacity: 1;
-      filter: blur(0);
-      transition: all 1s;
-    }
-
   @media only screen and (min-width: 600px) {
-    .header {
-      top: 0;
-      padding: 1%;
-      transition: 3s;
-    }
     .header-card {
       margin: 2.5%;
     }

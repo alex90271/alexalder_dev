@@ -53,45 +53,21 @@
   height: 15em;
   min-width: 7.5em;
   border-radius: 2.5em;
-  animation: header-animation 60s infinite normal ease-in;
+  animation: header-animation 15s infinite normal ease-in;
+  }
+  .header-card:hover {
+    animation-duration: 1s;
   }
 
   .header {
-    position: fixed;
-    top: 0;
-    z-index: 1;
     transition: 3s;
     color:white;
+    top: 0;
+      padding: 1%;
+      transition: 3s;
   }
 
   .shown {
-    opacity: 1;
-    filter: blur(0);
-    transition: all 1s;
-    padding: 1%;
-  }
-
-  .hidden {
-    opacity: 0;
-    filter: blur(5px);
-    padding: 3%;
-  }
-
-  @media only screen and (min-width: 600px) {
-    .header-card {
-
-      margin-top: 7.5%;
-  margin-bottom: 5%;
-  margin-left: 2.5%;
-  margin-bottom: 2.5%;
-    }
-    .header {
-      top: 0;
-      padding: 1%;
-      transition: 3s;
-    }
-    /*reverse effects for desktop*/
-    .shown {
       opacity: 0;
       filter: blur(5px);
       padding: 3%;
@@ -101,6 +77,16 @@
       opacity: 1;
       filter: blur(0);
       transition: all 1s;
+    }
+
+  @media only screen and (min-width: 600px) {
+    .header {
+      top: 0;
+      padding: 1%;
+      transition: 3s;
+    }
+    .header-card {
+      margin: 2.5%;
     }
   }
 

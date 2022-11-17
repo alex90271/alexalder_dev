@@ -41,7 +41,7 @@
 
 <style>
 .card {
-  background-color: grey;
+  background-color: lightblue;
   margin: 5%;
   border-radius: 2.5em;
   min-height: 10em;

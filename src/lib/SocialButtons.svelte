@@ -1,4 +1,5 @@
 <!-- choose one -->
+<p class="social-text">contact:</p>
 <main class="social-main">
   <a class="social-button" href="mailto:alex@alderautomations.com">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
@@ -18,6 +19,10 @@
 </main>
 
 <style>
+  .social-text{
+    font-size: medium;
+    text-align: center;
+  }
   .social-main {
     display: flex;
     flex-direction: row;
@@ -25,10 +30,13 @@
   }
 
   .social-button {
-    background-color: lightblue;
+    background-color: lightyellow;
     text-align: center;
     color: rgb(49, 49, 49);
-    padding: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     border-radius: 2.5em;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     transition-duration: 1s;
@@ -38,9 +46,5 @@
     background-color: grey;
   }
 
-  @media only screen and (min-width: 600px) {
-  .social-button{
-    margin: 2.5%
-  }
-}
+
 </style>

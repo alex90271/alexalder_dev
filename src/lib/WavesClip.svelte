@@ -14,7 +14,8 @@
 .wave {
   color: lightblue;
   position: fixed;
-  width: 100%
+  width: 100%;
+  z-index: -1;
 }
 
 .top-wave{
@@ -22,13 +23,6 @@
 }
 .bottom-wave{
   bottom: 0;
-}
-
-@media only screen and (min-width: 600px) {
-    .wave{
-        z-index: -1;
-    }
-  
 }
 
 </style>

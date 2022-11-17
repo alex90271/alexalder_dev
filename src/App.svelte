@@ -15,12 +15,12 @@
     <AnimatedCard
       card_header="Wordpress"
       card_desc="Install, Design, Host, and Manage your Wordpress Site"
-      call_to_action="Contact Now"
+      call_to_action=""
     />
     <AnimatedCard
       card_header="Websites"
       card_desc="Install, Design, Host, and Manage your Site"
-      call_to_action="Contact Now"
+      call_to_action=""
     />
     <AnimatedCard
       card_header="Consulting"
@@ -38,22 +38,22 @@
   <div class="card-section">
     <AnimatedCard
       card_header="Mandarin"
-      card_desc=""
-      call_to_action=""
+      card_desc="Designed this Restaurant website with wordpress"
+      call_to_action="Visit mandarinutah.com"
     />
     <AnimatedCard
       card_header="Python Payroll"
-      card_desc=""
-      call_to_action=""
+      card_desc="Designed a POS integrated payroll calculation system"
+      call_to_action="Visit Github"
     />
     <AnimatedCard
       card_header="Text to Speech"
-      card_desc=""
+      card_desc="Custom flutter text to speech application built from the google text to speech engine"
       call_to_action=""
     />
     <AnimatedCard
       card_header="This website"
-      card_desc=""
+      card_desc="Alderautomations, built with Svelte"
       call_to_action=""
     />
   </div>

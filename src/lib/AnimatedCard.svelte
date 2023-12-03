@@ -1,9 +1,7 @@
 <script>
   import { onMount } from 'svelte';
   
-  import IntersectionObserver from "svelte-intersection-observer";
-  let hiddenCard;
-  let cardIntersected = false;
+  import IntersectionObserver from './IntersectionObserver.svelte';
 
   export let card_header;
   export let card_desc;
@@ -11,20 +9,10 @@
 </script>
 
 <main>
-  <IntersectionObserver
-    element={hiddenCard}
-    on:observe={(e) => {
-      if (!e.detail.isIntersecting) {
-        cardIntersected = true;
-        console.log("intersecting");
-      } else {
-        cardIntersected = false;
-        console.log("not intersecting");
-      }
-    }}
-  >
+  <IntersectionObserver let:intersecting top={400}>
+  {#if intersecting}
     <div>
-      <div bind:this={hiddenCard} class={cardIntersected ? "card hidden" : "card shown"}>
+      <div class={"card shown"}>
         <h1>
           {card_header}
         </h1>
@@ -36,8 +24,25 @@
         </p>
       </div>
     </div>
+    {:else}
+    <div>
+      <div class={"card hidden"}>
+        <h1>
+          {card_header}
+        </h1>
+        <p>
+          {card_desc}
+        </p>
+        <p>
+          {call_to_action}
+        </p>
+      </div>
+    </div>
+    {/if}
   </IntersectionObserver>
 </main>
+
+
 
 <style>
 .card {

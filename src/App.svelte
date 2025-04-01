@@ -51,6 +51,11 @@
 
 <div class="parallax-bg" class:light-mode={!darkMode}>
   <div class="parallax-stars"></div>
+  {#if darkMode}
+    {#each Array(20) as _, i}
+      <div class="star"></div>
+    {/each}
+  {/if}
 </div>
 
 <main class:dark={darkMode} class:light={!darkMode} class="main">

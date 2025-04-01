@@ -4,6 +4,7 @@
   import HeaderCard from "./lib/HeaderCard.svelte";
   import WavesClip from "./lib/WavesClip.svelte";
   import AnimatedHeader from "./lib/AnimatedHeader.svelte";
+  import ContactCard from "./lib/ContactCard.svelte";
   import { onMount } from 'svelte';
   
   let darkMode = true;
@@ -126,8 +127,7 @@
   </section>
   
   <section id="contact">
-    <AnimatedHeader section_header="Contact" />
-    <Footer />
+    <ContactCard />
   </section>
 </main>
 

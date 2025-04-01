@@ -215,18 +215,30 @@ body.light-mode {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .card-section {
   display: grid;
-  grid-gap: 2rem;
-  margin: 2rem 0;
+  grid-gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 0.5rem;
+  }
+
+  .card-section {
+    grid-gap: 1rem;
+    margin: 1rem 0;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .card-section {
     grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
   }
 }
 
@@ -234,6 +246,25 @@ body.light-mode {
   .card-section {
     grid-template-columns: 1fr 1fr;
     grid-gap: 2.5rem;
+  }
+}
+
+/* Add responsive font sizes */
+@media (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
   }
 }
 

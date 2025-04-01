@@ -174,14 +174,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem;
     max-width: 1200px;
     margin: 0 auto;
   }
 
   .logo {
     font-family: 'Lovelo', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     background: linear-gradient(90deg, var(--primary), var(--secondary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -189,7 +189,7 @@
 
   .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
   }
 
@@ -199,6 +199,7 @@
     font-weight: 500;
     transition: all 0.3s ease;
     position: relative;
+    font-size: 0.9rem;
   }
 
   .nav-links a:hover {
@@ -242,8 +243,8 @@
   }
 
   section {
-    margin: 5rem 0;
-    padding: 2rem 0;
+    margin: 3rem 0;
+    padding: 1rem 0;
   }
 
   /* Light mode styles */
@@ -267,14 +268,30 @@
     background: rgba(0, 0, 0, 0.1);
   }
 
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     .navbar {
-      flex-direction: column;
-      gap: 1rem;
+      padding: 0.75rem 1rem;
     }
-    
+
     .nav-links {
-      gap: 1rem;
+      gap: 0.75rem;
+    }
+
+    .nav-links a {
+      font-size: 0.8rem;
+    }
+
+    .theme-toggle {
+      width: 35px;
+      height: 35px;
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    section {
+      margin: 2rem 0;
+      padding: 0.5rem 0;
     }
   }
 </style>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 @font-face {
   font-family: 'Lovelo';
@@ -9,36 +9,21 @@
   symbols: "\1F4BC" "\1F680" "\1F5A5" "\1F4A1";
   suffix: " ";
 }
-/* drop tailwind */
-/* root styles */
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-family: 'Lovelo', sans-serif;
-}
 
 :root {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: medium;
   font-weight: 400;
-
-  --jet: #312f2fff;
-  --middle-blue-green: #84dccfff;
-  --uranian-blue: #a6d9f7ff;
-  --light-steel-blue: #bccce0ff;
-  --tuscany: #bf98a0ff;
-
-  background-color: var(--jet);
-  background-image: radial-gradient(hsla(210, 60%, 60%, 0.25) 5%, transparent 0);
-  background-size: 30px 30px;
-
+  
+  /* Updated color palette - more vibrant and modern */
+  --bg-dark: #121212;
+  --primary: #3490de;
+  --secondary: #6c63ff;
+  --accent: #fb8b24;
+  --light-bg: #f8f9fa;
+  --text-light: #f8f9fa;
+  --text-dark: #232323;
+  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -46,19 +31,271 @@ h1 {
   -webkit-text-size-adjust: 100%;
 }
 
+/* Modern styling */
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--bg-dark);
+  background-image: 
+    radial-gradient(circle at 25px 25px, rgba(108, 99, 255, 0.15) 2%, transparent 0%),
+    radial-gradient(circle at 75px 75px, rgba(52, 144, 222, 0.1) 2%, transparent 0%);
+  background-size: 100px 100px;
+}
+
+h1 {
+  font-family: 'Lovelo', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+/* Modern scrollbar */
 ::-webkit-scrollbar {
-  height: 12px;
-  width: 12px;
-  background: #000;
+  height: 8px;
+  width: 8px;
+  background: var(--bg-dark);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #353535;
-  -webkit-border-radius: 1ex;
-  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+  background: var(--primary);
+  -webkit-border-radius: 4px;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 ::-webkit-scrollbar-corner {
-  background: #000;
+  background: var(--bg-dark);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Additional animations */
+@keyframes floatUp {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes shimmer {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+
+/* Parallax effect for section backgrounds */
+.parallax-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.parallax-stars {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background: white;
+  box-shadow: 
+    70vw 20vh 1px 1px rgba(255, 255, 255, 0.9),
+    30vw 40vh 2px 1px rgba(255, 255, 255, 0.8),
+    80vw 60vh 1px 1px rgba(255, 255, 255, 0.7),
+    10vw 10vh 2px 2px rgba(255, 255, 255, 0.6),
+    40vw 30vh 1px 1px rgba(255, 255, 255, 0.5),
+    60vw 50vh 2px 1px rgba(108, 99, 255, 0.5),
+    20vw 70vh 1px 1px rgba(52, 144, 222, 0.6),
+    50vw 80vh 2px 1px rgba(255, 255, 255, 0.7),
+    90vw 90vh 1px 1px rgba(255, 255, 255, 0.8),
+    5vw 5vh 2px 1px rgba(255, 255, 255, 0.9);
+  animation: shimmer 4s infinite alternate;
+}
+
+/* Gradient text for special emphasis */
+.gradient-text {
+  background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientFlow 3s linear infinite;
+}
+
+/* Interactive button hover effects */
+.interactive-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.interactive-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: all 0.6s;
+}
+
+.interactive-btn:hover::before {
+  left: 100%;
+}
+
+/* Glass morphism effect for cards */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom scrollbar for the entire page */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--primary), var(--secondary));
+  border-radius: 4px;
+}
+
+/* Custom selection styling */
+::selection {
+  background: var(--primary);
+  color: white;
+}
+
+/* Light mode transitions */
+body.light-mode {
+  transition: background-color 0.5s ease;
+}
+
+/* Floating animation for specific elements */
+.float-element {
+  animation: floatUp 1s ease-out forwards;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .parallax-stars {
+    display: none;
+  }
+}
+
+.main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.card-section {
+  display: grid;
+  grid-gap: 2rem;
+  margin: 2rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .card-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .card-section {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2.5rem;
+  }
+}
+
+/* Light mode styles */
+:global(body.light-mode) {
+  --bg-dark: #f5f5f7;
+  --text-light: #232323;
+  --text-dark: #121212;
+  background-color: var(--bg-dark) !important;
+  background-image: 
+    radial-gradient(circle at 25px 25px, rgba(108, 99, 255, 0.1) 2%, transparent 0%),
+    radial-gradient(circle at 75px 75px, rgba(52, 144, 222, 0.07) 2%, transparent 0%) !important;
+}
+
+:global(body.light-mode) .nav-container {
+  background: rgba(245, 245, 247, 0.8);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+:global(body.light-mode) .card {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+}
+
+:global(body.light-mode) .parallax-bg {
+  background-color: var(--bg-dark) !important;
+}
+
+:global(body.light-mode) .parallax-stars {
+  background-color: #333;
+  box-shadow: 
+    70vw 20vh 1px 1px rgba(0, 0, 0, 0.2),
+    30vw 40vh 2px 1px rgba(0, 0, 0, 0.15),
+    80vw 60vh 1px 1px rgba(0, 0, 0, 0.1),
+    10vw 10vh 2px 2px rgba(0, 0, 0, 0.1),
+    40vw 30vh 1px 1px rgba(0, 0, 0, 0.1),
+    60vw 50vh 2px 1px rgba(108, 99, 255, 0.2),
+    20vw 70vh 1px 1px rgba(52, 144, 222, 0.2),
+    50vw 80vh 2px 1px rgba(0, 0, 0, 0.15),
+    90vw 90vh 1px 1px rgba(0, 0, 0, 0.1),
+    5vw 5vh 2px 1px rgba(0, 0, 0, 0.1) !important;
+}
+
+:global(body.light-mode) a {
+  color: var(--text-dark);
+}
+
+:global(body.light-mode) .section-header {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+:global(body.light-mode) .header-line {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+}
+
+:global(body.light-mode) .nav-links a {
+  color: var(--text-dark);
+}
+
+:global(body.light-mode) .nav-links a:hover {
+  color: var(--primary);
 }
 

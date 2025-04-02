@@ -34,8 +34,6 @@
 /* Modern styling */
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
   overflow-x: hidden;
@@ -266,22 +264,29 @@ body.light-mode {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
+  box-sizing: border-box;
 }
 
 .card-section {
   display: grid;
   grid-gap: 1.5rem;
   margin: 1.5rem 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
   .main {
     padding: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .card-section {
     grid-gap: 1rem;
     margin: 1rem 0;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 

@@ -161,6 +161,8 @@
     padding-top: 80px;
     position: relative;
     z-index: 1;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .nav-container {
@@ -173,6 +175,8 @@
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .navbar {
@@ -250,6 +254,8 @@
   section {
     margin: 3rem 0;
     padding: 1rem 0;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   /* Light mode styles */
@@ -291,12 +297,16 @@
       height: 35px;
       font-size: 1rem;
     }
-  }
 
-  @media (max-width: 768px) {
     section {
       margin: 2rem 0;
       padding: 0.5rem 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .main {
+      padding-top: 60px;
     }
   }
 </style>

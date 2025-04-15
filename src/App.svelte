@@ -79,25 +79,21 @@
       <AnimatedCard
         card_header="Wordpress"
         card_desc="Install, Design, Host, and Manage your Wordpress Site"
-        call_to_action="Get in touch"
         call_to_action_link="#contact"
       />
       <AnimatedCard
         card_header="Websites"
         card_desc="Install, Design, Host, and Manage your Site"
-        call_to_action="Get in touch"
         call_to_action_link="#contact"
       />
       <AnimatedCard
         card_header="Consulting"
         card_desc="IT / Software consulting sessions"
-        call_to_action="Get in touch"
         call_to_action_link="#contact"
       />
       <AnimatedCard
         card_header="Hosting"
         card_desc="Provision hosting. Includes domain and SSL setup"
-        call_to_action="Get in touch"
         call_to_action_link="#contact"
       />
     </div>

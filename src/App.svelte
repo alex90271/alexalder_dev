@@ -66,13 +66,6 @@
         <a href="#services">Services</a>
         <a href="#work">Work</a>
         <a href="#contact">Contact</a>
-        <button class="theme-toggle" on:click={toggleTheme} aria-label="Toggle theme">
-          {#if darkMode}
-            <span class="theme-icon">☀️</span>
-          {:else}
-            <span class="theme-icon">🌙</span>
-          {/if}
-        </button>
       </div>
     </nav>
   </div>
@@ -85,22 +78,26 @@
       <AnimatedCard
         card_header="Wordpress"
         card_desc="Install, Design, Host, and Manage your Wordpress Site"
-        call_to_action="Learn More"
+        call_to_action="Get in touch"
+        call_to_action_link="#contact"
       />
       <AnimatedCard
         card_header="Websites"
         card_desc="Install, Design, Host, and Manage your Site"
-        call_to_action="Learn More"
+        call_to_action="Get in touch"
+        call_to_action_link="#contact"
       />
       <AnimatedCard
         card_header="Consulting"
         card_desc="IT / Software consulting sessions"
-        call_to_action="Book Now"
+        call_to_action="Get in touch"
+        call_to_action_link="#contact"
       />
       <AnimatedCard
         card_header="Hosting"
         card_desc="Provision hosting. Includes domain and SSL setup"
-        call_to_action="Get Started"
+        call_to_action="Get in touch"
+        call_to_action_link="#contact"
       />
     </div>
   </section>
@@ -112,21 +109,25 @@
         card_header="Mandarin"
         card_desc="Designed this Restaurant website with wordpress"
         call_to_action="Visit mandarinutah.com"
+        call_to_action_link="https://mandarinutah.com"
       />
       <AnimatedCard
         card_header="Python Payroll"
         card_desc="Designed a POS integrated payroll calculation system"
-        call_to_action="Visit Github"
+        call_to_action="Github"
+        call_to_action_link="https://github.com/alex90271/pos_pyroll"
       />
       <AnimatedCard
         card_header="Text to Speech"
         card_desc="Custom flutter text to speech application built from the google text to speech engine"
-        call_to_action="See Demo"
+        call_to_action="Github"
+        call_to_action_link="https://github.com/alex90271/flutter-text-to-speech"
       />
       <AnimatedCard
         card_header="This website"
         card_desc="Alderautomations, built with Svelte"
-        call_to_action="View Source"
+        call_to_action="Github"
+        call_to_action_link="https://github.com/alex90271/alexalder_dev"
       />
     </div>
   </section>

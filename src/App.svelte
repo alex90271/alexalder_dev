@@ -63,6 +63,7 @@
     <nav class="navbar">
       <div class="logo">Alder Automations</div>
       <div class="nav-links">
+        <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#work">Work</a>
         <a href="#contact">Contact</a>
@@ -130,6 +131,42 @@
         call_to_action_link="https://github.com/alex90271/alexalder_dev"
       />
     </div>
+  </section>
+  
+  <section id="about">
+    <AnimatedHeader section_header="About Me" />
+      <div class="bio-card">
+        <div class="bio-content">
+          <div class="bio-text">
+            <h2>Full Stack Developer</h2>
+            <p>I'm a professional web developer with experience in WordPress, custom website development, IT consulting, and hosting solutions.</p>
+            <p>With a background in both front-end and back-end technologies, I deliver complete solutions from concept to deployment.</p>
+            <div class="skills-container">
+              <div class="skill-category">
+                <h3>Software Development</h3>
+                <div class="skill-tags">
+                  <span class="skill-tag">JavaScript</span>
+                  <span class="skill-tag">HTML/CSS</span>
+                  <span class="skill-tag">Svelte</span>
+                  <span class="skill-tag">Python</span>
+                  <span class="skill-tag">WordPress</span>
+                  <span class="skill-tag">React</span>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h3>Tools & Platforms</h3>
+                <div class="skill-tags">
+                  <span class="skill-tag">Git</span>
+                  <span class="skill-tag">Firebase</span>
+                  <span class="skill-tag">AWS</span>
+                  <span class="skill-tag">Docker</span>
+                  <span class="skill-tag">Linux</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   </section>
   
   <section id="contact">

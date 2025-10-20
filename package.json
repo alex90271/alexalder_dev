@@ -5,8 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "server": "node server.js",
+    "dev:all": "npm run server & npm run dev",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:email": "node test-email.js"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^5.0.3",
@@ -18,7 +21,13 @@
     "vite": "^6.2.2"
   },
   "dependencies": {
+    "axios": "^1.12.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
     "feather-icons": "^4.29.0",
+    "node-fetch": "^3.3.2",
+    "node-mailjet": "^6.0.9",
     "svelte-intersection-observer": "^0.10.0"
   }
 }
